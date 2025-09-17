@@ -24,7 +24,7 @@ export const useFetch = <T, >(url: string): Params<T> => {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
 
-        const jsonData: T = await response.json()
+        const jsonData = await response.json() as T
         setData(jsonData)
         setError(null)
       } catch (err) {
