@@ -8,9 +8,6 @@
     },
     {
       "path": "./packages/characters"
-    },
-    {
-      "path": "./libs/shared"
     }
   ]
 }
